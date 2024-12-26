@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+  <!-- <script src="./script.js" defer></script> -->
+</head>
+<body>
+  <!-- Home Page -->
+  <div id="homePage" class="container">
+    <div class="user-details">
+      <img src="https://img.freepik.com/premium-vector/exam-logo-isolated-white-background_681420-5396.jpg?w=2000" alt="Quiz Logo" class="logo">
+      <h1>Welcome to the Quiz App</h1>
+      <label for="userName">Enter Your Name:</label>
+      <input type="text" id="userName" placeholder="Your Name">
+      <button onclick="enterQuiz()">Enter</button>
+    </div>
+    <div class="category-section">
+      <h2>Select a Category</h2>
+      <button onclick="selectCategory('pipeAndCisterns')">Pipe and Cisterns</button>
+      <button onclick="selectCategory('probability')">Probability</button>
+      <button onclick="selectCategory('problemsOnAge')">Problems on Age</button>
+      <button onclick="selectCategory('profitAndLoss')">Profit and Loss</button>
+    </div>
+  </div>
+
+  <!-- Quiz Page -->
+  <div id="quizPage" class="container" style="display: none;">
+    <div class="quiz-header">
+      <div id="timer">Time: 30s</div>
+      <div id="score">Score: 0</div>
+    </div>
+    <div id="questionNumber">Question: 1/10</div>
+    <div id="question">Question will appear here</div>
+    <div id="options">
+      <button class="option">Option 1</button>
+      <button class="option">Option 2</button>
+      <button class="option">Option 3</button>
+      <button class="option">Option 4</button>
+    </div>
+    <button id="nextButton" onclick="loadNextQuestion()">Next Question</button>
+  </div>
+
+  <!-- Result Page -->
+  <div id="resultPage" class="container" style="display: none;">
+    <h2>Quiz Results</h2>
+    <p><strong>Name:</strong> <span id="resultName"></span></p>
+    <p><strong>Total Time Taken:</strong> <span id="resultTime"></span>s</p>
+    <p><strong>Total Score:</strong> <span id="resultScore"></span></p>
+    <p><strong>Questions Attempted:</strong> <span id="resultAttempts"></span></p>
+    <p><strong>Correct Answers:</strong> <span id="resultCorrect"></span></p>
+    <p><strong>Wrong Answers:</strong> <span id="resultWrong"></span></p>
+    <p><strong>Score Percentage:</strong> <span id="resultPercentage"></span>%</p>
+    <button onclick="startQuiz()">Start Again</button>
+    <button onclick="goHome()">Go to Home</button>
+  </div>
+</body>
+</html>

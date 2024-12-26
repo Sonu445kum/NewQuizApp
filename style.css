@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Home Page Styling */
+  #homePage {
+    text-align: center;
+  }
+  
+  .user-details {
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 70%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .category-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .category-section button {
+    margin: 10px;
+  }
+  
+  /* Quiz Page Styling */
+  #quizPage {
+    display: none;
+    text-align: center;
+  }
+  
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  #questionNumber {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #options {
+    margin-bottom: 20px;
+  }
+  
+  #options .option {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #options .option:hover {
+    background-color: #218838;
+  }
+  
+  #nextButton {
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #nextButton:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Result Page Styling */
+  #resultPage {
+    display: none;
+    text-align: center;
+  }
+  
+  #resultPage h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #resultPage p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  #resultPage span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #resultPage button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #resultPage button:hover {
+    background-color: #218838;
+  }
+  
+  #resultPage button:last-child {
+    background-color: #007bff;
+  }
+  
+  #resultPage button:last-child:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    input[type="text"] {
+      width: 80%;
+    }
+  
+    #options .option {
+      width: 80%;
+    }
+  }
+  
